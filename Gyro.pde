@@ -24,7 +24,8 @@ void settings() {
 }
 
 void setup() {
-  cam = new PeasyCam(this, 1000);
+//  cam = new PeasyCam(this, 1000);
+  camera(0, 0, 1000, 0, 0, 0, 0, 1, 0);
   projectScenes = new Scene[numberOfScenes];
   projectScenes[0] = new GyroScene();
 }
